@@ -70,7 +70,7 @@ const Resume = (props) => {
     { skill: "Docker" },
     { skill: "HTML" },
     { skill: "CSS" },
-    { skill: "AWS" },
+    { skill: "CLOUD & AWS" },
   ];
 
   const projectsDetails = [
@@ -96,7 +96,7 @@ const Resume = (props) => {
       title: "Nasa Space project",
       duration: { fromDate: "2021", toDate: "2022" },
       description:
-        "this is a fullstack Application that allows users to Git: Show Git OutputPick a destination, choose a date, then launch into space with the NASA API",
+        "this is a fullstack Application that allows users to Pick a habitable planet, set a date, then blast off into space with the NASA API",
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Bootstrap, SASS.",
       link: "https://nasa-space-application.herokuapp.com/",
@@ -152,8 +152,13 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-            - Developed highly reactive and customized UI's using
-            React and Angular JS, to improve functionality of web applications
+            - Developed highly reactive and customized UI's using React and
+            Angular JS, to improve functionality of web applications
+          </span>
+          <span className="resume-description-text">
+            - Trained over 20 junior developers in internal web functions,
+            including steps on how to independently make minor updates and
+            changes to the codebase
           </span>
           <br />
         </div>
