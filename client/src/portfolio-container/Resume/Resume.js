@@ -152,8 +152,8 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-            - Developed highly reactive highly reactive and customized UIs using
-            React and Angular JS to improve functionality of web applications
+            - Developed highly reactive and customized UI's using
+            React and Angular JS, to improve functionality of web applications
           </span>
           <br />
         </div>
