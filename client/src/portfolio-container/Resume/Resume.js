@@ -70,12 +70,12 @@ const Resume = (props) => {
     { skill: "CSS" },
     { skill: "AWS" },
   ];
- 
-  const projectsDetails =  [ 
-    { 
+
+  const projectsDetails = [
+    {
       title: "Personal Portfolio Website",
       duration: { fromDate: "2020", toDate: "2022" },
-      description: 
+      description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading:
         "Technologies Used: React JS, Node JS, Express JS, Nodemailer, Bootstrap",
@@ -90,14 +90,14 @@ const Resume = (props) => {
         "Technologies Used:  React, Mongo DB, Express Js, Node Js, Redux, Tailwind CSS.",
       link: "https://github-finder-b7x80zhfb-godsheritage.vercel.app/",
     },
-    { 
+    {
       title: "Nasa Space project",
       duration: { fromDate: "2021", toDate: "2022" },
       description:
         "this is a fullstack Application that allows users to Git: Show Git OutputPick a destination, choose a date, then launch into space with the NASA API",
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Bootstrap, SASS.",
-      link: "https://.com",
+      link: "https://nasa-space-application.herokuapp.com/",
     },
   ];
 
@@ -112,13 +112,13 @@ const Resume = (props) => {
       />
       <ResumeHeading
         heading={"Google student developers bootcamp"}
-        subHeading={"Ministry Of Science And Technogy. Kwara, Nigerira"}
+        subHeading={"Ministry Of Science And Technogy. "}
         // fromDate={"2019"}
         // toDate={"2020"}
       />
       <ResumeHeading
         heading={"High School"}
-        subHeading={"Chapel Secondary school. Kwara, Nigeria"}
+        subHeading={"Chapel Secondary school."}
         // fromDate={"2007"}
         // toDate={"2012"}
       />
@@ -128,20 +128,20 @@ const Resume = (props) => {
       <div className="experience-container">
         <ResumeHeading
           heading={"Femtech IT Consultants"}
-          subHeading={"FULL STACK DEVELOPER"}
+          subHeading={"FULL STACK ENGINEER"}
           fromDate={"2020"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            I am currently working as a full stack engineer at femtech IT
-            Consultants.
+            I am currently working remotely as a full stack engineer at femtech
+            IT Consultants.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - I Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Developed websites from front to back using React, Node JS,
+            express JS and Mongo db. .
           </span>
           <br />
           <span className="resume-description-text">
@@ -150,8 +150,8 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-            - I translated designs and wireframes into high quality code using
-            JavaScript frameworks like React JS and Vue JS.
+            - Developed highly reactive highly reactive and customized UIs using
+            React and Angular JS to improve functionality of web applications
           </span>
           <br />
         </div>
