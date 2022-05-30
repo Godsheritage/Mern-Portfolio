@@ -39,7 +39,9 @@ const Resume = (props) => {
           <span>{props.description ? props.description : ""}</span>
           {props.link && (
             <div>
-              <a href={props.link}>View Project</a>
+              <a href={props.link} target="_blank" rel="noreferrer">
+                View Project
+              </a>
             </div>
           )}
         </div>
