@@ -14,7 +14,7 @@
     "BUILD_CLIENT": "npm run build --prefix client",
     "CLIENT_INSTALL": "npm install --prefix client",
     "SERVER_INSTALL": "npm install --prefix server ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run CLIENT_INSTALL",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run CLIENT_INSTALL && npm run BUILD_CLIENT",
     "install": "npm run CLIENT_INSTALL && npm run SERVER_INSTALL"
   },
   "repository": {
