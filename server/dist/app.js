@@ -19,8 +19,8 @@ app.use("/", contactRoute_1.default);
 if (process.env.NODE_ENV === "production") {
     //    create folder
     // express.static delivers static files(html,css). When we want to use build we want to serve this files in the build folder
-    app.use(express_1.default.static(path_1.default.resolve(__dirname, "..", "public")));
+    app.use(express_1.default.static(path_1.default.resolve(__dirname, "..", "dists ")));
     // if client makes request we want to send idex.html frist, which in  reality is all the react app
-    app.get("*", (req, res) => res.sendFile(path_1.default.resolve(__dirname, "..", "public", "index.html")));
+    app.get("*", (req, res) => res.sendFile(path_1.default.resolve(__dirname, "..", "dists ", "index.html")));
 }
 exports.default = app;
