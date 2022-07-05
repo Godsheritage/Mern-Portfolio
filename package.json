@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run serve --prefix server",
-    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "start": "npm start --prefix server",
     "BUILD_CLIENT": "npm run build --prefix client",
+    "deploy": "npm run BUILD_CLIENT && npm start",
     "CLIENT_INSTALL": "npm install --prefix client",
     "SERVER_INSTALL": "npm install --prefix server ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run CLIENT_INSTALL && npm run BUILD_CLIENT",
