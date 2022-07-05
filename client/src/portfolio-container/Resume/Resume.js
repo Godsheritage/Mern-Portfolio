@@ -147,8 +147,8 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            - I Integrated the web app with backend services to create a new
+            user onboarding application with dynamic form content..{" "}
           </span>
           <br />
           <span className="resume-description-text">
