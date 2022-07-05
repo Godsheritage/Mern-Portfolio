@@ -13,12 +13,12 @@ COPY server/package*.json server/
 RUN npm run SERVER_INSTALL 
 
 COPY client/ client/
+RUN npm run BUILD_CLIENT
 
 COPY server/ server/
 
-COPY server/dists/ server/public/
+# COPY server/dists/ server/public/
 
-# RUN npm run BUILD_CLIENT
 
 # to set this user to have least privilledges
 USER node
