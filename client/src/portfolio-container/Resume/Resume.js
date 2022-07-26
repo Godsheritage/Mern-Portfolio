@@ -60,6 +60,7 @@ const Resume = (props) => {
 
   const programmingSkillsDetails = [
     { skill: "JavaScript" },
+    { skill: "Python" },
     { skill: "React JS" },
     { skill: "Express JS" },
     { skill: "TypeScript" },
@@ -68,8 +69,7 @@ const Resume = (props) => {
     { skill: "Mongo Db" },
     { skill: "Rest API" },
     { skill: "Docker" },
-    { skill: "HTML" },
-    { skill: "CSS" },
+    { skill: "SASS" },
     { skill: "CLOUD & AWS" },
   ];
 
@@ -87,18 +87,18 @@ const Resume = (props) => {
       title: "Github Profile finder",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "A full stack application that works with the official Github API to enable users find their Github profiles",
+        "A Full-Stack application that is integrated with the official Github API to enable users search for their Github profiles",
       subHeading:
-        "Technologies Used:  React, Mongo DB, Express Js, Node Js, Redux, Tailwind CSS.",
+        "Technologies Used:  React JS, TypeScript, Redux, Daisy UI, Tailwind CSS.",
       link: "https://github-finder-b7x80zhfb-godsheritage.vercel.app/",
     },
     {
       title: "Nasa Space project",
       duration: { fromDate: "2021", toDate: "2022" },
       description:
-        "this is a fullstack Application that allows users to Pick a habitable planet, set a date, then blast off into space with the NASA API",
+        "A Full-Stack Application that allows users to Pick a habitable planet, set a date, then blast off into space with the NASA API",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Bootstrap, SASS.",
+        "Technologies Used:  MERN Stack, TypeScript, Bootstrap, and SASS.",
       link: "https://nasa-space-application.herokuapp.com/",
     },
   ];
@@ -113,8 +113,8 @@ const Resume = (props) => {
         // toDate={"2018"}
       />
       <ResumeHeading
-        heading={"Google student developers bootcamp"}
-        subHeading={"Ministry Of Science And Technogy. "}
+        heading={"Google Developer Student Clubs (GDSC)"}
+        subHeading={"Front-End experience Coding Bootcamp."}
         // fromDate={"2019"}
         // toDate={"2020"}
       />

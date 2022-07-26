@@ -13,7 +13,7 @@ COPY server/package*.json server/
 RUN npm run SERVER_INSTALL 
 
 COPY client/ client/
-RUN npm run BUILD_CLIENT
+# RUN npm run BUILD_CLIENT
 
 COPY server/ server/
 
