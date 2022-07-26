@@ -24,13 +24,13 @@ const Resume = (props) => {
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
-          {/* {props.fromDate && props.toDate ? (
+          {props.fromDate && props.toDate ? (
             <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
             </div>
           ) : (
             <div></div>
-          )} */}
+          )}
         </div>
         <div className="resume-sub-heading">
           <span>{props.subHeading ? props.subHeading : ""}</span>
@@ -129,38 +129,38 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Femtech IT Consultants"}
-          subHeading={"FULL STACK ENGINEER"}
+          heading={"Femtech I.T Consultants"}
+          subHeading={"FULL STACK MERN ENGINEER"}
           fromDate={"2020"}
-          toDate={"Present"}
+          toDate={"2022"}
         />
         <div className="experience-description">
-          <span className="resume-description-text">
+          {/* <span className="resume-description-text">
             I am currently working remotely as a full stack engineer at femtech
             IT Consultants.
-          </span>
+          </span> */}
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed websites from front to back using React, Node JS,
-            express JS and Mongo db. .
+            ✅Contributed to the development of 10+ Full Stack MERN
+            applications, from production to deployment.
           </span>
           <br />
           <span className="resume-description-text">
-            - I Integrated the web app with backend services to create a new
-            user onboarding application with dynamic form content..{" "}
+            ✅Trained over 20 junior developers on internal web functions,
+            including steps on how to independently make contributions to the
+            codebase.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - Developed highly reactive and customized UI's using React and
-            Angular JS, to improve functionality of web applications
-          </span>
-          <span className="resume-description-text">
-            - Trained over 20 junior developers in internal web functions,
-            including steps on how to independently make minor updates and
-            changes to the codebase
+            ✅Engineered and maintained 30+ REST API writing documentation using
+            Open APIs specifications
           </span>
           <br />
+          <span className="resume-description-text">
+            ✅Utilized AWS cloud solutions to develop and deploy
+            web applications faster.
+          </span>
         </div>
       </div>
     </div>,
