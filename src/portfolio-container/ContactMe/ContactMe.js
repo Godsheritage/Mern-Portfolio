@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 
+import "./ContactMe.css";
+import axios from "axios";
+import Typical from "react-typical";
+import Footer from "../Footer/Footer";
+import { toast } from "react-toastify";
 import imgBack from "../../../src/images/im4.jpg";
 import load1 from "../../../src/images/load2.gif";
-import axios from "axios";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import { toast } from "react-toastify";
-import "./ContactMe.css";
-import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import Footer from "../Footer/Footer";
-import Typical from "react-typical";
+import ScrollService from "../../utilities/ScrollService";
+import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+
 
 const ContactMe = (props) => {
   let fadeInScreenHandler = (screen) => {

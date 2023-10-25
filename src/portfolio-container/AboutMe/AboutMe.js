@@ -15,16 +15,14 @@ const AboutMe = (props) => {
 
   const SCREEN_CONSTANTS = {
     description:
-      "Full-Stack developer and Computer science student with 3+ years experience    in the MERN stack, and a flair for designing, developing, and testing scalable web applications across a range of software technologies.",
+      "As a Global Hackathon winner and full-stack developer, I have a passion for creating innovative solutions to complex problems. With a strong background in computer science, I am skilled in a variety of programming languages and technologies, including Swift, Python, JavaScript, TypeScript, and React. I have gained knowledge in various areas of computer science, including algorithm design, data structures, and software engineering. With my skills and experience, I am looking for software engineering internship opportunities, and the chance to work on challenging projects and to continue learning and growing as a full stack developer.",
     highlights: {
       bullets: [
-        "Full-Stack MERN Developer",
+        "Ex-Apple Software Engineering intern",
+        "Full-Stack Developer",
+        "Mobile Developer",
         "Front-End Developer",
-        "React and React Native",
-        "Redux",
-        "Building REST API",
         "AWS and Cloud Operations",
-        "Managing database",
       ],
       heading: "Here are a Few Highlights:",
     },
