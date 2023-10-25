@@ -61,10 +61,10 @@ const Resume = (props) => {
   const programmingSkillsDetails = [
     { skill: "JavaScript" },
     { skill: "Python" },
-    { skill: "React JS" },
-    { skill: "Express JS" },
+    { skill: "Swift" },
     { skill: "TypeScript" },
-    { skill: "Node JS" },
+    { skill: "React JS" },
+    { skill: "Java" },
     { skill: "Express JS" },
     { skill: "Mongo Db" },
     { skill: "Rest API" },
@@ -109,28 +109,30 @@ const Resume = (props) => {
       <ResumeHeading
         heading={"Morgan State University"}
         subHeading={"Bachelor of science in Computer science"}
-        // fromDate={"2014"}
-        // toDate={"2018"}
+        fromDate={"2022"}
+        toDate={"2025"}
       />
       <ResumeHeading
-        heading={"Google Developer Student Clubs (GDSC)"}
+        heading={"Google Developer Students Club (GDSC)"}
         subHeading={"Front-End experience Coding Bootcamp."}
-        // fromDate={"2019"}
-        // toDate={"2020"}
+        fromDate={"2019"}
+        toDate={"2020"}
       />
       <ResumeHeading
-        heading={"High School"}
-        subHeading={"Chapel Secondary school."}
-        // fromDate={"2007"}
-        // toDate={"2012"}
+        heading={"CodePath"}
+        subHeading={"Software engineering and mobile development"}
+        fromDate={"2022"}
+        toDate={"2023"}
       />
     </div>,
+
     /* WORK EXPERIENCE */
+
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Femtech I.T Consultants"}
-          subHeading={"FULL STACK MERN ENGINEER"}
+          heading={"Apple"}
+          subHeading={"Software Engineering intern"}
           fromDate={"2020"}
           toDate={"2022"}
         />
@@ -142,24 +144,35 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            ✅Contributed to the development of 10+ Full Stack MERN
-            applications, from production to deployment.
+            ✅ Developed and extended a full stack web service to highlight critical information about software release to engineers and leadership working on Apple Vision Pro software.
           </span>
           <br />
           <span className="resume-description-text">
-            ✅Trained over 20 junior developers on internal web functions,
-            including steps on how to independently make contributions to the
-            codebase.{" "}
+            ✅ Ensured high performance and efficiency by GraphQL and the Apollo client to optimize queries
+          </span>
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Sparrow"}
+          subHeading={"Backend developer intern"}
+          fromDate={"2020"}
+          toDate={"2022"}
+        />
+        <div className="experience-description">
+          {/* <span className="resume-description-text">
+            I am currently working remotely as a full stack engineer at femtech
+            IT Consultants.
+          </span> */}
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            ✅Developed and implemented full-stack web features for the Sparrow web portal using technologies such as React JS, Node.js, and MongoDB
           </span>
           <br />
           <span className="resume-description-text">
-            ✅Engineered and maintained 30+ REST API writing documentation using
-            Open APIs specifications
-          </span>
-          <br />
-          <span className="resume-description-text">
-            ✅Utilized AWS cloud solutions to develop and deploy
-            web applications faster.
+            ✅ Collaborated with cross-functional teams to design and implement user-friendly interfaces for real-time search and navigation
+
           </span>
         </div>
       </div>
