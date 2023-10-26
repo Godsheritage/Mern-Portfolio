@@ -17,7 +17,7 @@ const Profile = () => {
         >
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a href="https://facebook.com">
                 <i className="fa fa-facebook-square" />
               </a>
               <a href="https://www.linkedin.com/in/godsheritage/">

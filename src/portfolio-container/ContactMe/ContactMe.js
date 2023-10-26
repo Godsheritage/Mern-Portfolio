@@ -112,7 +112,7 @@ const ContactMe = (props) => {
             {" "}
             <Typical loop={Infinity} steps={["Get in Touch 🤝", 1000]} />
           </h2>
-          <a href="#">
+          <a href="https://facebook.com">
             <i className="fa fa-facebook-square" />
           </a>
           <a href="https://twitter.com/kyng_Herit">
