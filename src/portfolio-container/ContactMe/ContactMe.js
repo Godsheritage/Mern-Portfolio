@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
 import "./ContactMe.css";
-import axios from "axios";
 import Typical from "react-typical";
 import Footer from "../Footer/Footer";
 import { toast } from "react-toastify";
