@@ -80,6 +80,7 @@ const Profile = () => {
               Hire Me{" "}
             </button>
             <a
+              // href="../../../../public/Godsheritage's Resume.pdf"
               href="Godsheritage's Resume.pdf"
               download="Godsheritage's Resume.pdf"
             >
