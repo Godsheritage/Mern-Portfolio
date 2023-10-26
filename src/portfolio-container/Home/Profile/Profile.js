@@ -53,7 +53,7 @@ const Profile = () => {
                     5000,
                     "Full Stack Developer!💻",
                     1000,
-                    "MERN Stack Dev💻",
+                    "Ex Apple SWE  ",
                     1000,
                     "Photographer 📸",
                     1000,
@@ -68,7 +68,7 @@ const Profile = () => {
               </h1>
             </span>
             <span className="profile-role-tagline">
-              Knack of building applications with front and back end operations.
+              A dev with a knack for building applications with front and back end operations.
             </span>
           </div>
           <div className="profile-options">
@@ -80,6 +80,7 @@ const Profile = () => {
               Hire Me{" "}
             </button>
             <a
+              // href="../../../../public/Godsheritage's Resume.pdf"
               href="Godsheritage's Resume.pdf"
               download="Godsheritage's Resume.pdf"
             >

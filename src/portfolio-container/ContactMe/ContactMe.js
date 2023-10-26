@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import "./ContactMe.css";
 import axios from "axios";
@@ -10,7 +10,7 @@ import load1 from "../../../src/images/load2.gif";
 import Animations from "../../utilities/Animations";
 import ScrollService from "../../utilities/ScrollService";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-
+import emailjs from "@emailjs/browser";
 
 const ContactMe = (props) => {
   let fadeInScreenHandler = (screen) => {
@@ -26,6 +26,26 @@ const ContactMe = (props) => {
   const [message, setMessage] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
+
+  // export const ContactUs = () => {
+  //   const form = useRef();
+
+  //   const sendEmail = (e) => {
+
+  //   };
+
+  //   return (
+  //     <form ref={form} onSubmit={sendEmail}>
+  //       <label>Name</label>
+  //       <input type="text" name="user_name" />
+  //       <label>Email</label>
+  //       <input type="email" name="user_email" />
+  //       <label>Message</label>
+  //       <textarea name="message" />
+  //       <input type="submit" value="Send" />
+  //     </form>
+  //   );
+  // };
 
   useEffect(() => {
     return () => {
@@ -47,35 +67,37 @@ const ContactMe = (props) => {
     setMessage(e.target.value);
   };
 
+  const form = useRef();
+
   const formSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      let data = {
-        name,
-        email,
-        message,
-      };
+    if (name.length === 0 || email.length === 0 || message.length === 0) {
+      setBanner("Error, Check the required fields and try again");
+      toast.error("Error, Check the required fields and try again");
+      setBool(false);
+    } else {
+      emailjs
+        .sendForm(
+          "service_kkvp73u",
+          "template_f77a84k",
+          form.current,
+          "AcdUpOs6TrJL2aXTH"
+        )
+        .then(
+          (result) => {
+            setBanner("Message sent successfully");
+            toast.success("Message sent successfully");
+            setBool(false);
 
-      setBool(true);
-
-      const res = await axios.post(`/contact`, data);
-
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      } else if (res.status === 200) {
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
-
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    } catch (err) {
-      console.log(err);
+            setName("");
+            setEmail("");
+            setMessage("");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
 
@@ -110,7 +132,7 @@ const ContactMe = (props) => {
             <h4>Send your message</h4>
             <img src={imgBack} alt="" />
           </div>
-          <form onSubmit={formSubmit}>
+          <form ref={form} onSubmit={formSubmit}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
